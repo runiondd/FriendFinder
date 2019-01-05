@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Questions</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2> Survey Questions</h2>
+    <hr>
+
+    <h3>
+      <strong>About You</strong>
+    </h3>
+    <div class="row">
+    <form>
+     
+      <h4>Name (Required)</h4>
+      <input type="text" id="friendName" class="form-control" required>
+      <h4>Link to Photo Image (Required)</h4>
+      <input type="text" id="friendPhoto" class="form-control" required>
+      <hr>
+
+      <h3><strong>Question 1</strong></h3>
+      <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+      <div class="col-xs-2" style="width: 155px;">
+        <select class="custom-select form-control-sm" id="question0">
+            <option >Choose...</option>
+            <option selected value="1">One</option>
+            <option value="2" selected>Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+
+      <h3><strong>Question 2</strong></h3>
+      <h4>The unicorn is your spirit animal.</h4>
+      <div class="col-xs-2" style="width: 155px;">
+        <select class="custom-select form-control-sm" id="question1">
+            <option >Choose...</option>
+            <option value="1">One</option>
+            <option value="2" selected>Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+
+      <h3><strong>Question 3</strong></h3>
+      <h4>Your days are powered by caffine & unicorn farts.</h4>
+      <div class="col-xs-2" style="width: 155px;">
+        <select class="custom-select form-control-sm" id="question2">
+            <option >Choose...</option>
+            <option value="1">One</option>
+            <option value="2" selected>Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+
+      <h3><strong>Question 4</strong></h3>
+      <h4>Nothing ever gets by YOU!</h4>
+      <div class="col-xs-2" style="width: 155px;">
+        <select class="custom-select form-control-sm" id="question3">
+            <option >Choose...</option>
+            <option value="1" selected>One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+
+      <h3><strong>Question 5</strong></h3>
+      <h4>If you were a number you'd be clinically inanse...everyone knows that people can't be numbers!</h4>
+      <div class="col-xs-2" style="width: 155px;">
+        <select class="custom-select form-control-sm" id="question4">
+            <option >Choose...</option>
+            <option value="1">One</option>
+            <option value="2" selected>Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+
+      <h3><strong>Question 6</strong></h3>
+      <h4>Sometimes you just eat cheese.</h4>
+      <div class="col-xs-2" style="width: 155px;">
+        <select class="custom-select form-control-sm" id="question5">
+            <option >Choose...</option>
+            <option value="1">One</option>
+            <option value="2" selected>Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+
+      <h3><strong>Question 7</strong></h3>
+      <h4>You consider jorts, an old "Netgear" polo, and socks with sandles to be appropriate work attire.</h4>
+      <div class="col-xs-2" style="width: 155px;">
+        <select class="custom-select form-control-sm" id="question6">
+            <option >Choose...</option>
+            <option value="1" selected>One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+
+      <h3><strong>Question 8</strong></h3>
+      <h4>You wear combat boots to the server room.</h4>
+      <div class="col-xs-2" style="width: 155px;">
+        <select class="custom-select form-control-sm" id="question7">
+            <option >Choose...</option>
+            <option value="1" selected>One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+
+      <h3><strong>Question 9</strong></h3>
+      <h4>There's no place like home (mom's basement).</h4>
+      <div class="col-xs-2" style="width: 155px;">
+        <select class="custom-select form-control-sm" id="question8">
+            <option >Choose...</option>
+            <option value="1" selected>One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+
+      <h3><strong>Question 10</strong></h3>
+      <h4>You prefer "Dang case-a-dillas" over "Quesadillas".</h4>
+      <div class="col-xs-2" style="width: 155px;">
+        <select class="custom-select form-control-sm" id="question9">
+            <option >Choose...</option>
+            <option value="1" selected>One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary submit">Submit</button>
+    </form>
+  </div>
+     <footer class="footer mt-4">
+      <div class="container">
+       
+        <p> <a href="/home">Home</a>  |  <a href="#" id="clear">Clear Friends</a> | <a href="/api/friends">API Friends Link</a> |
+      </div>
+    </footer> 
+
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="friendModalLabel">Best Match</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Your best match is: <span id="bestMatch">TBD</span>
+        <p><img id="matchImg"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS LOADED FROM OUR SERVER -->
+<script type="text/javascript">
+  // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+  // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+  // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+  // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+  $(".submit").on("click", function(event) {
+    event.preventDefault();
+    var answers = [];
+
+    for (var i=0; i<10; i++) {
+     answers[i] = $("#question" + i).val();
+    }
+    
+    // Here we grab the form elements
+    var newFriend = {
+      name: $("#friendName").val(),
+      photo: $("#friendPhoto").val(),
+      scores: answers
+    };
+
+      $.ajax({ url: "/api/friends", method: "GET" })
+      .then(function(friendsData) {
+        
+        var differences = [];  // an array list of the sum of difference in scores
+    
+        for(var i=0; i < friendsData.length; i++) {  //loop over each person in friendsData
+        
+          for(var x=0; x < answers.length; x++) {   //for each question that everyone answered loop over each of their scores and compare record diffs
+            var sumOfDifferences = 0;
+            var diff = answers[x] - friendsData[i].scores[x];
+            console.log("answers[x]=" + answers[x]);
+            console.log("friendsData[i].scores[x]=" + friendsData[i].scores[x]);
+           
+            console.log("diff=" + diff);
+            sumOfDifferences += Math.abs(diff); 
+          
+            if (x === answers.length-1) {
+              //record the sum of differeneces
+              console.log("record sum of diffs");
+              console.log("sumOfDifferences=" + sumOfDifferences);
+              differences[i] = sumOfDifferences;
+            }
+          }
+
+          for (var x = 0; x < differences.length; x++) {
+            console.log (differences[x]);
+          }
+
+          var indexOfMinDiff = 0;
+       //   console.log("differences.length=" + differences.length);
+
+          for(var counter = 0; counter < differences.length; counter++){
+
+            // console.log("differences[indexOfMinDiff]=" + differences[indexOfMinDiff]);
+            // console.log("differences[counter]=" + differences[counter]);
+          
+            if(differences[indexOfMinDiff] <= differences[counter]){
+              indexOfMinDiff = counter;
+              // console.log("indexOfMinDiff=" + indexOfMinDiff);
+           }
+          }
+        }
+        
+        $("#bestMatch").text(friendsData[indexOfMinDiff].name);
+
+        $("#matchImg").attr("src", friendsData[indexOfMinDiff].photo);
+        $("#friendModal").modal("show");
+
+     });
+
+    $.post("/api/friends", newFriend, 
+      function(data) {
+        console.log(data);
+        if (data) {         
+            //newFriendData = JSON.parse(newFriend);
+            console.log("newFriend=" + newFriend);
+          }
+          else {
+              alert("Sorry something went wrong");
+          }   
+      });
+    });
+</script>
+
+</html>
